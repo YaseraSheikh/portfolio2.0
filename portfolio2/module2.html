@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX | Yasera Portfolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00ffcc, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .back-btn {
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #00ffcc, #ff00ff);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HEADER */
+        .header {
+            padding-top: 120px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #00ffcc, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            opacity: 0.7;
+        }
+
+        /* GRID */
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+        }
+
+        /* CARD */
+        .day-card {
+            background: #111;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+        }
+
+        .day-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px #00ffcc;
+        }
+
+        /* CARD HEADER */
+        .day-header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #00ffcc, #ff00ff);
+            color: black;
+        }
+
+        .day-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .day-title {
+            font-size: 1.2rem;
+        }
+
+        /* CONTENT */
+        .day-content {
+            padding: 20px;
+        }
+
+        .day-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* LIST */
+        .topics-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topics-list li {
+            margin: 8px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .topics-list li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #00ffcc;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">UI/UX</div>
+        <a href="index.html" class="back-btn">⬅ Back</a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>UI/UX Course</h1>
+        <p>UI/UX DESIGN</p>
+    </div>
+
+    <!-- GRID -->
+    <div class="days-grid">
+
+        <!-- DAY 1 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-number">01</div>
+                <div class="day-title">What is UI/UI</div>
+            </div>
+            <div class="day-content">
+                <img src="uixu1.png" alt="HTML Screenshot">
+
+                <ul class="topics-list">
+                    <li>What is UI/UX</li>
+                    <li>Why Figma</li>
+                    <li>Panel</li>
+                    <li>Elements</li>
+                </ul>
+            </div>
+        </div>
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-number">02</div>
+                <div class="day-title">REd </div>
+            </div>
+            <div class="day-content">
+                <img src="uiux2.png" alt="HTML Screenshot">
+                <ul class="topics-list">
+                    <li>Paster Vector</li>
+                    <li>Basic tools</li>
+                    <li>Constraints</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- DAY 2 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-number">03</div>
+                <div class="day-title">Red bull 1 page</div>
+            </div>
+            <div class="day-content">
+                <a
+                    href="https://www.figma.com/proto/IUznnLgMTXwvQJRO4DLb33/Untitled?page-id=2%3A4&node-id=21-73&viewport=-44%2C-10%2C0.2&t=j8NPxXNq7fNcUZww-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=21%3A73">red
+                    bull project</a>
+
+                <ul class="topics-list">
+                    <li>red bull layout</li>
+                    <li>auto layout</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-number">04</div>
+                <div class="day-title">glass card</div>
+            </div>
+            <div class="day-content">
+                <img src="glass card.png" alt="HTML Screenshot">
+
+                <ul class="topics-list">
+                    <li>Glass card</li>
+                    <li>Red bull animation</li>
+                </ul>
+            </div>
+        </div>
+
+
+        © 2025 Yasera Sheikh Portfolio
+        </footer>
+
+</body>
+
+</html>
